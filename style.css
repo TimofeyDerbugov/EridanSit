@@ -1,0 +1,443 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mapes {
+  margin-left: 10%;
+}
+
+.ss {
+  margin-left: 0px;
+  margin-top: 25px;
+}
+
+.nam {
+  margin-left: 10%;
+  margin-top: 15px;
+}
+
+.my-photo {
+  margin-top: 5%;
+  border-radius: 10%;
+  margin-left: 25%;
+  width: 40%;
+}
+
+.sprts h1, b, ul, p {
+  margin-left: 10%;
+}
+
+.card h1 {
+  color: #000000;
+}
+
+.sprts b, li, p {
+  font-size: 26px;
+}
+
+
+
+.schedule-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.schedule-table th, .schedule-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+.schedule-table thead tr {
+  background-color: #e3f2fd;
+  color: #333;
+  font-weight: bold;
+  border-radius: 25px;
+}
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.schedule-table tbody tr:nth-child(odd) {
+  background-color: #f1f8ff;
+}
+
+
+body {
+  font-family: "Tahoma";
+  background-color: white;
+}
+
+h2, h3 {
+  color: #000000;
+}
+
+.about-us {
+  width: auto;
+  background-color: #2a2a2a; /* Titanium Black */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  margin-top: 95px;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #011fa6; /* Titanium Black */
+  padding: 20px 50px;
+  flex-wrap: wrap;
+}
+
+header .logo img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+header nav a {
+  font-size: 19px;
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #000000;
+}
+
+/* Фотография с текстами поверх */
+/* .image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} */
+
+.background-image {
+  width: 100%; /* Заполняет всю ширину контейнера */
+  height: auto; /* Сохраняет пропорции изображения по высоте */
+  display: block; /* Убирает отступы внизу изображения */
+}
+
+/* .text-overlay {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10; /* Обеспечивает, что текст будет поверх изображения */
+  /* padding: 0 20px; Добавим немного отступов слева и справа для адаптивности */
+/* } */
+
+.text-overlay h1 {
+  position: absolute; /* Позволяет позиционировать текст относительно контейнера */
+  top: 15%; /* Центрирует текст по вертикали */
+  left: 50%; /* Центрирует текст по горизонтали */
+  transform: translate(-50%, -50%); /* Сдвигает текст для точного центрирования */
+  color: rgb(166, 164, 164); /* Цвет текста */
+  font-size: 195px; /* Размер шрифта */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Тень для улучшения читаемости */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10; /* Обеспечивает, что текст будет поверх изображения */
+  padding: 0 20px; /* Добавим немного отступов слева и справа для адаптивности */
+}
+
+.text-overlay p {
+  position: absolute; /* Позволяет позиционировать текст относительно контейнера */
+  margin-top: -17%;
+  left: 40%; /* Центрирует текст по горизонтали */
+  transform: translate(-50%, -50%); /* Сдвигает текст для точного центрирования */
+  color: #000000; /* Цвет текста */
+  font-size: 1px; /* Размер шрифта */
+  text-align: center;
+  z-index: 10; /* Обеспечивает, что текст будет поверх изображения */
+  padding: 0 20px; /* Добавим немного отступов слева и справа для адаптивности */
+  text-shadow: 4px 4px 2px black
+}
+
+
+/* Карточки секций */
+
+.card {
+  background-color: #E0E1E3; /* Titanium Black */
+  color: white;
+  margin: 40px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img, .social-card img, .video iframe {
+  display: block;
+  margin-left: 10%;
+  margin-top: 25px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.card p {
+  margin-top: 25px;
+  font-size: 21px;;
+}
+
+.video iframe {
+  width: 100%;
+  height: 500px;
+  margin-left: 0;
+}
+
+a.more-link {
+  color: #606060;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a.more-link:hover {
+  color: #000000;
+}
+
+.social-card a {
+  color:#606060
+}
+
+/* Соц. Сети */
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.social-card {
+  background-color: #dddcdc; /* Titanium Black */
+  color: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.social-card img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.social-card a {
+  color: #606060;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.social-card a:hover {
+  color: rgb(0, 0, 0);
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #011fa6; /* Titanium Black */
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 30px;
+}
+
+footer .footer-logo img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+footer nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+footer nav a:hover {
+  color: #000000;
+}
+
+/* Плавные переходы */
+html {
+  scroll-behavior: smooth;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: #e3e3e3;
+  font-weight: bold;
+}
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+/* Адаптивные стили */
+
+/* Для мобильных устройств */
+@media (max-width: 767px) {
+  header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  header nav a {
+    margin: 10px 0;
+    font-size: 17px;
+  }
+
+  .card, .social-card {
+    width: 90%;
+  }
+
+  .social-media {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  /* .image-container {
+    height: 300px;
+  } */
+
+  .text-overlay h1 {
+    top: 38%;
+    font-size: 2.5rem;
+    color: white;
+
+  }
+
+  .text-overlay p {
+    margin-top: -6%;
+    font-size: 1.5rem;
+    color: white;
+
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  header nav a {
+    margin: 0 15px;
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .social-card {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .social-media {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  /* .image-container {
+    height: 350px;
+  } */
+
+  .text-overlay h1 {
+    margin-top: 6%;
+    font-size: 3.5rem;
+    color: white;
+  }
+
+  .text-overlay p {
+    margin-top: -6%;
+    font-size: 2.25rem;
+    color: white;
+  }
+}
+
+/* Для больших экранов (десктопы) */
+@media (min-width: 1025px) {
+  .card {
+    width: 60%;
+  }
+
+  .social-card {
+    width: 30%;
+  }
+
+  table {
+    font-size: 18px;
+  }
+
+  /* .image-container {
+    height: 400px;
+  } */
+
+  .text-overlay h1 {
+    top: 20%;
+    font-size: 5rem;
+    color: white;
+  }
+
+  .text-overlay p {
+    margin-top: -6%;
+    font-size: 2.5rem;
+    color: white;
+  }
+}
+
+li, p, b {
+color: #000000
+}
